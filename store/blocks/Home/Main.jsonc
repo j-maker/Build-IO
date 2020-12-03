@@ -1,0 +1,20 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home"
+    ]
+  },
+  "responsive-layout.desktop#home": {
+    "children": [
+      "rich-text",
+      "custom-default-message",
+      "custom-random-number"
+    ],
+    "props": {}
+  },
+  "responsive-layout.mobile#home": {
+    "children": [],
+    "props": {}
+  }
+}
