@@ -13,6 +13,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.disclosure-layout": "1.x",
     "vtex.wish-list": "0.x",
     "vtex.product-context": "0.x",
     "vtex.admin-suggestions": "2.x",

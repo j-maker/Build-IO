@@ -1,0 +1,166 @@
+{
+    "header-row#mainHeader": {
+        "children": [],
+        "props": {
+            "zIndex": "", //Number
+            "sticky": "", //Boolean
+            "fullWidth": "", //Boolean
+            "inverted": "" //Boolean
+        }
+    },
+    "sticky-layout#header": {
+        "props": {
+            "position": "" //string // top bottom
+        },
+        "children": []
+    },
+    "flex-layout.row#mainHeader": {
+        "children": [],
+        "props": {
+            "blockClass": "", //String
+            "borderColor": "", //String
+            "borderWidth": "", //0...5
+            "border": "", //String \| String[] //top, right, bottom, left or all
+            "colGap": "", //0...10 //number or string
+            "colSizing": "", //equal|auto 
+            "fullWidth": "", //Boolean
+            "horizontalAlign": "", //left|right|center
+            "marginBottom": "", //0...10 //number or string
+            "marginTop": "", //0...10 //number or string   
+            "paddingBottom": "", //0...10 //number or string
+            "paddingTop": "", //0...10 //number or string
+            "preserveLayoutOnMobile": "", //Boolean
+            "preventHorizontalStretch": "", //Boolean
+            "preventVerticalStretch": "", //Boolean
+            "rowGap": "" //0...10 //number or string
+        }
+    },
+    "flex-layout.col#mainHeader": {
+        "children": [],
+        "props": {
+            "blockClass": "", //String
+            "borderColor": "", //String
+            "borderWidth": "", //0...5
+            "border": "", //String \| String[] //top, right, bottom, left or all
+            "horizontalAlign": "", //left|right|center
+            "marginLeft": "", //0...10 //number or string
+            "marginRight": "", //0...10 //number or string   
+            "paddingLeft": "", //0...10 //number or string
+            "paddingRight": "", //0...10 //number or string
+            "preventVerticalStretch": "", //Boolean
+            "rowGap": "", //0...10 //number or string
+            "verticalAlign": "", //top|middle|bottom
+            "width": "" //"0...100%"|"grow"
+        }
+    },
+    "flex-layout.col#spacer": {
+        "props": {
+            "width": "grow"
+        }
+    },
+    "search-bar#Desktop": {
+        "props": {
+            "attemptPageTypeSearch": "", //
+            "autocompleteAlignment": "", //
+            "autocompleteFullWidth": "", //
+            "autoFocus": "", //
+            "blurOnSubmit": "", //
+            "compactMode": "", //
+            "customSearchPageUrl": "", //
+            "emptyPlaceholder": "", //
+            "hasIconLeft": "", //
+            "maxWidth": "", //
+            "minSearchTermLength": "", //
+            "openAutocompleteOnFocus": "", //
+            "placeholder": "", //
+            "inputType": "", //
+            "displayMode": "" //'clear-button' 'search-and-clear-buttons' 'search-button'
+        }
+    },
+    "login": {
+        "props": {
+            "optionsTitle": "", //String //
+            "emailAndPasswordTitle": "", //String
+            "accessCodeTitle": "", //String
+            "emailPlaceholder": "", //String
+            "passwordPlaceholder": "", //String
+            "showPasswordVerificationIntoTooltip": "", //boolean
+            "acessCodePlaceholder": "", //String
+            "showIconProfile": "", //boolean
+            "iconLabel": "", //String
+            "hideIconLabel": "", //boolean
+            "labelClasses": "", //String
+            "providerPasswordButtonLabel": "", //String
+            "hasIdentifierExtension": "", //boolean
+            "identifierPlaceholder": "", //String
+            "invalidIdentifierError": "", //String
+            "mirrorTooltipToRight": "", //boolean
+            "logInButtonBehavior": "", //Enum //popover link
+            "accountOptionsButtonBehavior": "", //Enum
+            "accountOptionLinks": "", //Enum
+            "termsAndConditions": "", //String
+            "disabledEmailInputs": "" //boolean
+        }
+    },
+    "logo": {
+        "props": {
+            "color": "", //String
+            "showLabel": "", //Boolean
+            "width": "", //Number
+            "height": "", //Number
+            "url": "", //String
+            "href": "", //String
+            "mobileWidth": "", //Number
+            "mobileHeight": "" //Number
+        }
+    },
+    "drawer": {
+        "blocks": [
+            "drawer-header#my-drawer"
+        ]
+    },
+    "drawer-header#my-drawer": {
+        "children": [
+            // you need to include the block `drawer-close-button` somewhere inside here
+            // ...
+            "drawer-close-button"
+        ],
+        "props": {
+            "maxWidth": "", //number or string
+            "isFullWidth": "", //Boolean
+            "slideDirection": "", //'horizontal'|'vertical'|'rightToLeft'|'leftToRight'
+            "backdropMode": "" //'default'|'none'
+        }
+    },
+    "modal-trigger": {
+        "children": [
+            "rich-text",
+            "modal-layout"
+        ],
+        "props": {
+            "trigger":"click"//enum //click load load-session
+        }
+    },
+    "modal-layout": {
+        "children": [
+            "modal-header"
+        ],
+        "props": {
+            "scroll":"",//enum //body content 
+            "blockClass":"",//string //
+            "disableEscapeKeyDown":"",//boolean //Esc true false
+            "fullScreen":"",//boolean //
+            "backdrop":""//enum //clickable none
+        }
+    },
+    "modal-header": {
+        "children": [
+            "rich-text",
+            "modal-actions.close"
+        ],
+        "props": {
+            "showCloseButton":true,//boolean
+            "iconCloseSize":"32"//number
+        }
+    }
+}

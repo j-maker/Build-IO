@@ -1,0 +1,60 @@
+{
+    "menu-item#menu-1": {
+        "props": {
+            "iconProps": "",
+            "blockClass": "",
+            "id": "", //String
+            "type": "custom", //String//category custom
+            "iconId": null,
+            "highlight": false, //boolean
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "ZAPATOS",
+                "text": "ZAPATOS"
+            },
+            "iconPosition": "left" //String//right left
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#menu-1"
+        ]
+    },
+    "vtex.menu@2.x:submenu#menu-1": {
+        "props": {
+            "width": "auto",
+            "orientation": "horizontal"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#menu-1-1"
+            //"vtex.menu@2.x:menu#menu-1-2",
+            //"vtex.menu@2.x:menu#menu-1-3"
+            //"list-context.image-list#menu-slider-1"
+        ]
+    },
+    "vtex.menu@2.x:menu#menu-1-1": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": ""
+        },
+        "children": [
+            "menu-item#menu-1-1"
+        ]
+    },
+    "menu-item#menu-1-1": {
+        "props": {
+            "id": "X/X",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": false,
+                "tagTitle": "SUBMENU",
+                "text": "SUBMENU"
+            },
+            "blockClass": ""
+        }
+    }
+}

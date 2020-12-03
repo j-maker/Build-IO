@@ -1,0 +1,29 @@
+@media (min-width:768px){
+        
+}
+
+.headerContainer--contentRandomNumber{
+    background-color: #000;   
+}
+.paper--wrapperRandomNumber{
+    position: fixed;
+    bottom: 0;
+    margin: 0 0 10px;
+    max-width: 360px;
+}
+
+.closeButton--contentRandomNumber{
+    padding: 0;
+}
+
+.closeButtonContainer--contentRandomNumber{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.closeIcon--contentRandomNumber{
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+}

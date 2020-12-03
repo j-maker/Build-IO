@@ -1,0 +1,71 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home"
+    ]
+  },
+  "responsive-layout.desktop#home": {
+    "children": [
+//      "disclosure-layout-group#group",
+//      "menu-item#menu-1",
+//      "rich-text#home",
+      //"modal-trigger",
+      //"custom-default-message",      
+      "modal-trigger#RandomNumber"
+    ],
+    "props": {}
+  },
+ 
+ 
+ 
+
+
+
+
+
+
+
+  "modal-trigger#RandomNumber": {
+    "children": [
+      //"rich-text",
+      "modal-layout#RandomNumber"
+    ],
+    "props": {
+      "trigger": "load" //enum //click load load-session
+    }
+  },
+  "modal-layout#RandomNumber": {
+    "children": [
+      "modal-header#RandomNumber"
+    ],
+    "props": {
+      "scroll": "content", //enum //body content 
+      "blockClass":"wrapperRandomNumber", //string //
+      "disableEscapeKeyDown": false, //boolean //Esc true false
+      "fullScreen": false, //boolean //
+      "backdrop": "none" //enum //clickable none
+    }
+  },
+  "modal-header#RandomNumber": {
+    "children": [
+      "custom-random-number"
+      //"modal-actions.close"
+    ],
+    "props": {
+      "blockClass":"contentRandomNumber",
+      "showCloseButton": true, //boolean
+      "iconCloseSize": 20 //number
+    }
+  },
+  "rich-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Visit our [help](https://help.vtex.com/en/faq/what-is-vtex-io) section.\n*Be Bold!*\n**This is italic**",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  }
+} 
