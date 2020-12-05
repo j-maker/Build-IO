@@ -1,0 +1,74 @@
+{
+    "list-context.product-list#ShelfHome": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf-home"
+        ]
+    },
+    "slider-layout#shelf-home": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 1,
+                "phone": 1
+            }
+            /*
+            "slideTransition": {
+                "speed": 400,
+                "delay": 0,
+                "timing": ""
+            },
+            "infinite": true, //boolean
+            "showNavigationArrows": "desktopOnly", //mobileOnly, desktopOnly, always, or never
+            "label": "<Slider/>", //string
+            "showPaginationDots": "", //mobileOnly, desktopOnly, always, or never
+            "usePagination": true, //boolean
+            "navigationStep": "itemsPerPage", //itemsPerPage  page
+            "autoplay": {
+                "timeout": 1000,
+                "stopOnHover": true
+            }, //object
+            "fullWidth": true, //booolean
+            "arrowSize": {
+                "desktop": 24,
+                "mobile": 20,
+                "tablet": 18,
+                "phone": 16
+            }*/
+        }
+    },
+    "product-summary.shelf": {
+        "children": [
+            "add-to-list-btn",
+            "product-summary-image",
+            "product-summary-name",
+            "product-rating-inline",
+            "product-summary-space",
+            "product-list-price",
+            "product-installments#summary",
+            "product-selling-price#summary",
+            "product-price-savings#summary",
+            "product-identifier.summary",
+            "product-summary-buy-button",
+            "add-to-cart-button"   //AGREGA Bottom en vitrina
+        ]
+    },
+    "product-images": {
+        "props": {
+          "zoomFactor": 2,
+          "aspectRatio": {
+            "desktop": "1:1",
+            "phone": "1:1"
+          },
+          "thumbnailsOrientation": "horizontal",
+          "showNavigationArrows": "mobile",
+          "showPaginationDots": false,
+          "displayThumbnailsArrows": true,
+          "marginTop": 0,
+          // "hiddenImages": "1",
+          "paddingBottom": 7
+        }
+      }
+}

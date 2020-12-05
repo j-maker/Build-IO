@@ -1,37 +1,37 @@
 {
-    "header-row#mainHeader": {
-        "children": [],
-        "props": {
-            "zIndex": "", //Number
-            "sticky": "", //Boolean
-            "fullWidth": "", //Boolean
-            "inverted": "" //Boolean
-        }
-    },
     "sticky-layout#header": {
         "props": {
             "position": "" //string // top bottom
         },
-        "children": []
+        "children": [
+            "flex-layout.row#mainHeader"
+        ]
     },
     "flex-layout.row#mainHeader": {
-        "children": [],
+        "children": [
+            "logo",
+            "menu-item#menu-1",
+            "search-bar#Desktop",
+            "modal-trigger",
+            "drawer",
+            "login"
+        ],
         "props": {
             "blockClass": "", //String
             "borderColor": "", //String
             "borderWidth": "", //0...5
             "border": "", //String \| String[] //top, right, bottom, left or all
             "colGap": "", //0...10 //number or string
-            "colSizing": "", //equal|auto 
-            "fullWidth": "", //Boolean
+            "colSizing": "equal", //equal|auto 
+            "fullWidth": true, //Boolean
             "horizontalAlign": "", //left|right|center
             "marginBottom": "", //0...10 //number or string
             "marginTop": "", //0...10 //number or string   
             "paddingBottom": "", //0...10 //number or string
             "paddingTop": "", //0...10 //number or string
             "preserveLayoutOnMobile": "", //Boolean
-            "preventHorizontalStretch": "", //Boolean
-            "preventVerticalStretch": "", //Boolean
+            "preventHorizontalStretch": false, //Boolean
+            "preventVerticalStretch": false, //Boolean
             "rowGap": "" //0...10 //number or string
         }
     },
@@ -138,7 +138,7 @@
             "modal-layout"
         ],
         "props": {
-            "trigger":"click"//enum //click load load-session
+            "trigger": "click" //enum //click load load-session
         }
     },
     "modal-layout": {
@@ -146,11 +146,11 @@
             "modal-header"
         ],
         "props": {
-            "scroll":"",//enum //body content 
-            "blockClass":"",//string //
-            "disableEscapeKeyDown":"",//boolean //Esc true false
-            "fullScreen":"",//boolean //
-            "backdrop":""//enum //clickable none
+            "scroll": "", //enum //body content 
+            "blockClass": "", //string //
+            "disableEscapeKeyDown": "", //boolean //Esc true false
+            "fullScreen": "", //boolean //
+            "backdrop": "" //enum //clickable none
         }
     },
     "modal-header": {
@@ -159,8 +159,8 @@
             "modal-actions.close"
         ],
         "props": {
-            "showCloseButton":true,//boolean
-            "iconCloseSize":"32"//number
+            "showCloseButton": true, //boolean
+            "iconCloseSize": "32" //number
         }
     }
 }

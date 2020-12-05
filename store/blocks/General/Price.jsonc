@@ -1,0 +1,20 @@
+{
+    "product-installments#summary": {
+      "props": {
+        "blockClass": "summary"
+      }
+    },
+    "product-selling-price#summary": {
+      "props": {
+        "blockClass": "summary"
+      }
+    },
+    "product-price-savings#summary": {
+      "props": {
+        "markers": [
+          "discount"
+        ],
+        "blockClass": "summary"
+      }
+    }
+  }

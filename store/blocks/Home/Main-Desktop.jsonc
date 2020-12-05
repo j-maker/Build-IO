@@ -7,28 +7,21 @@
   },
   "responsive-layout.desktop#home": {
     "children": [
-//      "disclosure-layout-group#group",
-//      "menu-item#menu-1",
-//      "rich-text#home",
-      //"modal-trigger",
-      //"custom-default-message",      
-      "modal-trigger#RandomNumber"
+      "list-context.product-list#ShelfHome",
+      "info-card",
+      "list-context.image-list#home",
+      "notification.bar",
+      "rich-text",
+      //"modal-trigger#RandomNumber",
+      "back-to-top-button",
+      "iframe",
+      "video"
     ],
     "props": {}
   },
- 
- 
- 
-
-
-
-
-
-
 
   "modal-trigger#RandomNumber": {
     "children": [
-      //"rich-text",
       "modal-layout#RandomNumber"
     ],
     "props": {
@@ -41,7 +34,7 @@
     ],
     "props": {
       "scroll": "content", //enum //body content 
-      "blockClass":"wrapperRandomNumber", //string //
+      "blockClass": "wrapperRandomNumber", //string //
       "disableEscapeKeyDown": false, //boolean //Esc true false
       "fullScreen": false, //boolean //
       "backdrop": "none" //enum //clickable none
@@ -53,7 +46,7 @@
       //"modal-actions.close"
     ],
     "props": {
-      "blockClass":"contentRandomNumber",
+      "blockClass": "contentRandomNumber",
       "showCloseButton": true, //boolean
       "iconCloseSize": 20 //number
     }
@@ -68,4 +61,4 @@
       "blockClass": "help-message"
     }
   }
-} 
+}

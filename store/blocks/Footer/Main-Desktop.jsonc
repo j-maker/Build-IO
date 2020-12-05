@@ -7,12 +7,17 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer"
+      "link",
+      "newsletter-form",
+      "list-context.image-list#demo",
+      "flex-layout.row#footer-desktop"
     ]
   },
-  "flex-layout.row#footer": {
+  "flex-layout.row#footer-desktop": {
     "children": [
-      "image#footer"
+      "social-networks",
+      "accepted-payment-methods",
+      "powered-by"
     ]
   }
 }

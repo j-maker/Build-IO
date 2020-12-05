@@ -1,4 +1,131 @@
 {
+    "info-card": {
+        "props": {
+            "id": "info-card-example",
+            "isFullModeStyle": false,
+            "textPosition": "left",
+            "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "mobileImageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "headline": "Clearance Sale",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-example"
+            /*"textAlignment": "center",
+            "subhead": "Texto ",
+            "textMode": "html", //'rich-text'
+            "callToActionLinkTarget": "/_self",
+            "CallToActionEnum": "" //none button link*/
+        }
+    },
+    "list-context.image-list#home": {
+        "children": [
+            "slider-layout#home"
+        ],
+        "props": {
+            "height": 650,
+            "images": [
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+                    "description": "something something"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+                    "description": "something something"
+                }
+            ]
+        }
+    },
+    "slider-layout#home": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "slideTransition": {
+                "speed": 400,
+                "delay": 0,
+                "timing": ""
+            },
+            "infinite": true, //boolean
+            "showNavigationArrows": "desktopOnly", //mobileOnly, desktopOnly, always, or never
+            "label": "<Slider/>", //string
+            "showPaginationDots": "", //mobileOnly, desktopOnly, always, or never
+            "usePagination": true, //boolean
+            "navigationStep": "itemsPerPage", //itemsPerPage  page
+            "autoplay": {
+                "timeout": 1000,
+                "stopOnHover": true
+            }, //object
+            "fullWidth": true, //booolean
+            "arrowSize": {
+                "desktop": 24,
+                "mobile": 20,
+                "tablet": 18,
+                "phone": 16
+            }
+        },
+        "children": [
+            "rich-text#1",
+            "rich-text#2",
+            "rich-text#3"
+        ]
+    },
+    "rich-text#1": {
+        "props": {
+            "text": "Test1"
+        }
+    },
+    "rich-text#2": {
+        "props": {
+            "text": "Test2"
+        }
+    },
+    "rich-text#3": {
+        "props": {
+            "text": "Test3"
+        }
+    },
+    "video": {
+        "props": {
+            "width": "100%",
+            "height": "600px",
+            "loop": false,
+            "autoPlay": true,
+            "muted": false,
+            "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+            "blockClass": "videoEl",
+            "name": "Por fin", //
+            "description": "Looogre", //
+            "type": "Looo", //
+            "poster": "Lo logre", //
+            "controlsType": "native", //
+            "PlayIcon": "icon-play", //
+            "PauseIcon": "icon-pause", //
+            "VolumeOnIcon": "icon-volume-on", //
+            "VolumeOffIcon": "icon-volume-off" //
+            //"FullscreenIcon":"icon-extend"//
+        }
+    },
+    "iframe": {
+        "props": {
+            "src": "https://cdn.shopify.com/s/files/1/0415/5382/1854/files/november.mp4?v=1601567120",
+            "width": "1920",
+            "height": "1000",
+            "title": "exampleStaticPageName iframe wrapper for {account}"
+        }
+    },
+    "back-to-top-button": {
+        "props": {
+            "displayThreshold": 800,
+            "display": "button" //button  Back To Top
+        }
+    },
+    "notification.bar": {
+        "props": {
+            "content": "Notificación"
+        }
+    },
     "rich-text#home": {
         "props": {
             "text": "VTEX Store Framework",

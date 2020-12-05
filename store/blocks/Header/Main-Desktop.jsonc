@@ -15,5 +15,16 @@
     "children": [
       "header-row#mainHeader"
     ]
+  },
+  "header-row#mainHeader": {
+    "children": [
+      "sticky-layout#header"
+    ],
+    "props": {
+      "zIndex": "", //Number
+      "sticky": "", //Boolean
+      "fullWidth": "", //Boolean
+      "inverted": "" //Boolean
+    }
   }
 }

@@ -1,0 +1,44 @@
+{
+  "store.not-found#product": {
+    "blocks": [
+      "flex-layout.row#wrapperPNF"
+    ]
+  },
+  "flex-layout.row#wrapperPNF": {
+    "children": [
+      "flex-layout.col#wrapperPNF"
+    ]
+  },
+  "flex-layout.col#wrapperPNF": {
+    "children": [
+      "rich-text#not-foundTitle",
+      "rich-text#not-foundSubTitle",
+      "search-bar#PNF",
+      "back-to-top-button"
+    ],
+    "props": {
+      "blockClass": "wrapperColInfoPNF"
+    }
+  },
+  "search-bar#PNF": {
+    "props": {
+      "blockClass": "searchPNF"
+    }
+  },
+  "rich-text#not-foundTitle": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**La página que buscas no existe.**",
+      "blockClass": "pageNotFoundProductTitle"
+    }
+  },
+  "rich-text#not-foundSubTitle": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Dinos lo que buscas y te ayudaremos a encontrarlo:",
+      "blockClass": "pageNotFoundProductSubtitle"
+    }
+  }
+}

@@ -1,4 +1,113 @@
 {
+    /*"newsletter-form": {
+        "props":{
+            "ErrorState":"",//
+            "SuccessState":"",//
+            "LoadingState":""//
+        },
+        "children": [
+          //"newsletter-input-email",
+          //"newsletter-input-name",
+          //"newsletter-submit"
+        ]
+      },
+      "newsletter-input-email":{
+          "props":{}
+      },
+      "newsletter-input-name":{
+        "props":{}
+    },
+    "newsletter-submit":{
+        "props":{}
+    },*/
+    "link": {
+        "props": {
+            "scrollTo": "", //string
+            "target": "", //string
+            "displayMode": "", //anchor button buttonProps 
+            "href": "/{slug}/p",
+            "label": "More details >",
+            "buttonProps": {
+                "variant": "", //primary or secondary//
+                "size": "" //small, regular or large
+            }
+        }
+    },
+    "list-context.image-list#demo": {
+        "children": [
+            "slider-layout#demo-images"
+        ],
+        "props": {
+            "height": 150,
+            "images": [
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+                    "description": "something something",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+                    "width": "", //string / number // % or px.
+                    "link": {
+                        "url": "", //string
+                        "noFollow": "", //boolean
+                        "openNewTab": "", //string
+                        "title": "" //string
+                    }
+                }
+            ]
+        }
+    },
+    "slider-layout#demo-images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true
+        }
+    },
+    "social-networks": {
+        "props": {
+            "title": "Siguenos en nuestras redes",
+            "showInColor": true,
+            "socialNetworks": [ //Possible values: facebook, twitter, linkedin, youtube, pinterest
+                {
+                    "url": "https://facebook.com/foo",
+                    "name": "Facebook"
+                },
+                {
+                    "url": "https://twitter.com/foo",
+                    "name": "Twitter"
+                },
+                {
+                    "url": "https://facebook.com/foo",
+                    "name": "Linkedin"
+                },
+                {
+                    "url": "https://twitter.com/foo",
+                    "name": "Youtube"
+                },
+                {
+                    "url": "https://facebook.com/foo",
+                    "name": "Pinterest"
+                }
+            ]
+        }
+    },
+    "accepted-payment-methods": {
+        "props": {
+            "showInColor": true,
+            "paymentMethods": [
+                "mastercard",
+                "visa",
+                "diners club"
+            ]
+        }
+    },
+    "powered-by": {
+        "props": {
+            "showInColor": true
+        }
+    },
     "image#footer": {
         "props": {
             "width": 100,
