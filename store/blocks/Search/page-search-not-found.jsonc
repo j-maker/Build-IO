@@ -1,0 +1,129 @@
+{
+  "search-not-found-layout": {
+    "children": [
+      "flex-layout.row#notfound"
+    ]
+  },
+  "flex-layout.row#notfound": {
+    "children": [
+      //"not-found"
+      "flex-layout.col#notfound-left",
+      "flex-layout.col#notfound-right"
+    ],
+    "props": {
+      "blockClass": "wrapperMain",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#notfound-left": {
+    "children": [
+      "flex-layout.row#searchtitleNotFound",
+      "rich-text#introNotFoundMain",
+      "rich-text#contentNotFoundMain",
+      "rich-text#questionNotFoundArticle",
+      "rich-text#introNotFoundArticle",
+      "rich-text#contentNotFoundArticle",
+      "rich-text#questionNotFoundHelp",
+      "rich-text#contentNotFoundHelp",
+      "rich-text#questionNotFoundSearchSales",
+      "rich-text#introNotFoundSearchSales"
+    ],
+    "props": {
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#searchtitleNotFound": {
+    "children": [
+      "search-title.v2"
+    ],
+    "props": {
+      "blockClass": "NotFoundTitle"
+    }
+  },
+  "rich-text#contentNotFoundMain": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Asegúrate de que el texto esté correctamente escrito.\n Prueba con otros criterios de búsqueda.\n Utiliza un texto más general.\n También puedes buscar una prenda por su referencia de 8 dígito.",
+      "blockClass": "textIntroNFArticle"
+    }
+  },
+  "rich-text#introNotFoundMain": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "No hemos encontrado ningún articulo que se corresponda a esta búsqueda.",
+      "blockClass": "textIntroNFArticle"
+    }
+  },
+  "rich-text#questionNotFoundSearchSales": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "¿Buscas mejores precios?",
+      "blockClass": "textQuestionNFArticle"
+    }
+  },
+  "rich-text#introNotFoundSearchSales": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Apúntatepara que te informemos puntualmente de nuestras promociones y/o rebajas.\n O accede a nuestro [OUTLET ONLINE,](https://help.vtex.com/en/faq/what-is-vtex-io)donde encontrarás prendas de temporadas anteriores a precios irresistibles.",
+      "blockClass": "textIntroNFArticle"
+    }
+  },
+  "rich-text#questionNotFoundHelp": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "¿Necesitas ayuda o más información?",
+      "blockClass": "textQuestionNFArticle"
+    }
+  },
+  "rich-text#contentNotFoundHelp": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "\n\n [Atención al cliente](https://help.vtex.com/en/faq/what-is-vtex-io)\n [Cambios y/o devoluciones](https://help.vtex.com/en/faq/what-is-vtex-io)\n [Envio de pedido](https://help.vtex.com/en/faq/what-is-vtex-io) \n [Preguntas Frecuentes](https://help.vtex.com/en/faq/what-is-vtex-io)\n [Tiendas](https://help.vtex.com/en/faq/what-is-vtex-io)",
+      "blockClass": "textContentNFArticle"
+    }
+  },
+  "rich-text#questionNotFoundArticle": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "¿Buscas algún artículo en concreto?",
+      "blockClass": "textQuestionNFArticle"
+    }
+  },
+  "rich-text#introNotFoundArticle": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Estos son los productos más buscados:",
+      "blockClass": "textIntroNFArticle"
+    }
+  },
+  "rich-text#contentNotFoundArticle": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "[- Vestidos](https://help.vtex.com/en/faq/what-is-vtex-io)\n [- Camisetas y tops](https://help.vtex.com/en/faq/what-is-vtex-io)\n [- Camisas](https://help.vtex.com/en/faq/what-is-vtex-io) \n [- Jeans](https://help.vtex.com/en/faq/what-is-vtex-io)\n [- Faldas](https://help.vtex.com/en/faq/what-is-vtex-io)",
+      "blockClass": "textContentNFArticle"
+    }
+  },
+  "flex-layout.col#notfound-right": {
+    "children": [
+      "image#notFound"
+    ]
+  },
+  "image#notFound": {
+    "props": {
+      "blockClass": "notFoundImage",
+      "src": "https://mangoecuador.vteximg.com.br/arquivos/error_mango.jpg",
+      "href": "/"
+    }
+  }
+}

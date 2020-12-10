@@ -1,0 +1,67 @@
+{
+    "flex-layout.row#searchbread": {
+        "children": [
+            "breadcrumb.search"
+        ],
+        "props": {
+            "priceRange": false,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "breadcrumb.search": {
+        "props": {
+            //"homeIconSize": "", //Number //
+            //"caretIconSize": "", //Number //
+            "showOnMobile": false
+        }
+    },
+    "search-title.v2": {
+        "props": {}
+    },
+    "order-by.v2": {
+        "props": {
+            "hiddenOptions": "", //string //"OrderByScoreDESC", "OrderByTopSaleDESC", "OrderByReleaseDateDESC", "OrderByBestDiscountDESC" "OrderByPriceDESC" "OrderByPriceASC" "OrderByNameASC" "OrderByNameDESC" "OrderByCollection"
+            "showOrderTitle": true
+        }
+    },
+    "filter-navigator.v3": {
+        "props": {
+            "blockClass": ""
+        }
+    },
+    "total-products.v2": {
+        "props": {
+            "blockClass": ""
+        }
+    },
+    "flex-layout.row#subCategory": {
+        "children": [
+            "search-content"
+        ],
+        "props": {
+            "blockClass": "search-category"
+        }
+    },
+    "search-content": {
+        "blocks": [
+            "gallery",
+            "not-found"
+        ],
+        "props": {
+            "blockClass": ""
+        }
+    },
+    "gallery": {
+        "blocks": [
+            "product-summary.shelf"
+        ]
+    },
+    "flex-layout.row#fetchmore": {
+        "props": {
+            "blockClass": ""
+        },
+        "children": [
+            "search-fetch-more"
+        ]
+    }
+}

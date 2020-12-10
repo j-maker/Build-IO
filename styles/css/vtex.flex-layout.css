@@ -1,3 +1,9 @@
-@media (min-width:768px){
-    
+@media (min-width:768px) {
+    .flexCol--wrapperMain,
+    .flexRow--wrapperMain {
+        max-width: 96rem;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
 }

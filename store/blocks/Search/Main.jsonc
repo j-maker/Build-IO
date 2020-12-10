@@ -1,157 +1,77 @@
 {
-    "store.search#brand": {
-      "blocks": [
-        //"search-result-layout#category"
-      ],
-      "props": {
-        "context": {
-          "orderByField": "OrderByReleaseDateDESC",
-          "hideUnavailableItems": true,
-          "maxItemsPerPage": 12,
-          "skusFilter": "ALL",
-          "simulationBehavior": "skip"
-        }
+  "store.search": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        //"hideUnavailableItems":"", //boolean
+        "orderByField": "OrderByReleaseDateDESC", // OrderByTopSaleDESC, OrderByReleaseDateDESC, OrderByBestDiscountDESC, OrderByPriceDESC, OrderByPriceASC, OrderByNameASC, OrderByNameDESC or OrderByScoreDESC
+        "facetsBehavior": "Static", //dynamic  Static
+        "maxItemsPerPage": 20,
+        "skusFilter": "ALL", //FIRST_AVAILABLE  ALL_AVAILABLE All
+        "simulationBehavior": "skip" //default skip
       }
-    },
-    ///////////////////SEARCH
-    "search-result-layout": {
-      "blocks": [
-        "search-result-layout.desktop#search",
-        "search-result-layout.mobile#category",
-        "search-not-found-layout"
-      ]
-    },
-    "search-result-layout.desktop#search": {
-      "children": [
-        "flex-layout.row#resultSearch"
-      ],
-      "props": {
-        "blockClass": "wrapperResultSearch",
-        "showFacetQuantity": true,
-        "pagination": "show-more",
-        "preventRouteChange": false,
-        "mobileLayout": {
-          "mode1": "small",
-          "mode2": "normal"
-        }
+    }
+  },
+  "store.search#brand": {
+    "blocks": [
+      "search-result-layout#department"
+    ],
+    "props": {
+      "context": {
+        //"hideUnavailableItems":"", //boolean
+        "orderByField": "OrderByReleaseDateDESC", // OrderByTopSaleDESC, OrderByReleaseDateDESC, OrderByBestDiscountDESC, OrderByPriceDESC, OrderByPriceASC, OrderByNameASC, OrderByNameDESC or OrderByScoreDESC
+        "facetsBehavior": "Static", //dynamic  Static
+        "maxItemsPerPage": 20,
+        "skusFilter": "ALL", //FIRST_AVAILABLE  ALL_AVAILABLE All
+        "simulationBehavior": "skip" //default skip
       }
-    },
-    "flex-layout.row#resultSearch": {
-      "children": [
-        "flex-layout.col#resultSearch"
-      ],
-      "props": {
-        "props": {
-          "blockClass": "wrapperHomeRow"
-        },
-        "preventHorizontalStretch": true,
-        "fullWidth": true
+    }
+  },
+  "store.search#department": {
+    "blocks": [
+      "search-result-layout#department"
+    ],
+    "props": {
+      "context": {
+        //"hideUnavailableItems":"", //boolean
+        "orderByField": "OrderByReleaseDateDESC", // OrderByTopSaleDESC, OrderByReleaseDateDESC, OrderByBestDiscountDESC, OrderByPriceDESC, OrderByPriceASC, OrderByNameASC, OrderByNameDESC or OrderByScoreDESC
+        "facetsBehavior": "Static", //dynamic  Static
+        "maxItemsPerPage": 20,
+        "skusFilter": "ALL", //FIRST_AVAILABLE  ALL_AVAILABLE All
+        "simulationBehavior": "skip" //default skip
       }
-    },
-    "flex-layout.col#resultSearch": {
-      "children": [
-        //"filter-navigator.v3",
-        "flex-layout.row#searchinfo",
-        "flex-layout.col#contentSearch",
-        "back-to-top-button"
-      ],
-      "props": {}
-    },
-    "flex-layout.row#searchinfo": {
-      "children": [
-        "drawer#filterSearch",
-        "flex-layout.col#spacer",
-        "total-products.v2",
-        "order-by.v2"
-        //"flex-layout.col#productCount",
-        //"flex-layout.col#orderby"
-      ],
-      "props": {
-        "blockClass": "wrapperSearchInfo"
+    }
+  },
+  "store.search#category": {
+    "blocks": [
+      "search-result-layout#category"
+    ],
+    "props": {
+      "context": {
+        //"hideUnavailableItems":"", //boolean
+        "orderByField": "OrderByReleaseDateDESC", // OrderByTopSaleDESC, OrderByReleaseDateDESC, OrderByBestDiscountDESC, OrderByPriceDESC, OrderByPriceASC, OrderByNameASC, OrderByNameDESC or OrderByScoreDESC
+        "facetsBehavior": "Static", //dynamic  Static
+        "maxItemsPerPage": 20,
+        "skusFilter": "ALL", //FIRST_AVAILABLE  ALL_AVAILABLE All
+        "simulationBehavior": "skip" //default skip
       }
-    },
-    "drawer#filterSearch": {
-      "children": [
-        "flex-layout.col#filter"
-      ],
-      "props": {
-        "blockClass": "drawerFilter"
-      },
-      "blocks": [
-        "drawer-trigger#search"
-      ]
-    },
-    "drawer-trigger#search": {
-      "children": [
-        "rich-text#openDrawerFilter"
-      ]
-    },
-    "rich-text#openDrawerFilter": {
-      "props": {
-        "text": "Filter",
-        "blockClass": "filterSearchText"
-      }
-    },
-    "flex-layout.col#productCount": {
-      "children": [
-        "flex-layout.row#productCount"
-      ]
-    },
-    "flex-layout.row#productCount": {
-      "children": [
-        "total-products.v2"
-      ],
-      "props": {
-        "blockClass": "productCountCol"
-      }
-    },
-    "flex-layout.col#orderby": {
-      "children": [
-        "order-by.v2"
-      ],
-      "props": {
-        "blockClass": "orderByCol",
-        "preventVerticalStretch": true
-      }
-    },
-    "flex-layout.col#filter": {
-      "children": [
-        "flex-layout.row#searchtitle",
-        "filter-navigator.v3"
-      ],
-      "props": {
-        "priceRange": false,
-        "blockClass": "filterCol"
-      }
-    },
-    "flex-layout.row#searchtitle": {
-      "children": [
-        "search-title.v2"
-      ]
-    },
-    "flex-layout.col#contentSearch": {
-      "children": [
-        "flex-layout.row#search",
-        "flex-layout.row#fetchmore"
-      ]
-    },
-    "flex-layout.row#search": {
-      "children": [
-        "search-content#pageSearch"
-      ]
-    },
-    "search-content#pageSearch": {
-      "blocks": [
-        "gallery#search",
-        "not-found"
-      ]
-    },
-    "gallery#search": {
-      "blocks": [
-        "product-summary.shelf"
-      ],
-      "props": {
-        "blockClass": "wrapperGallerySearch"
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result-layout#subCategory"
+    ],
+    "props": {
+      "context": {
+        //"hideUnavailableItems":"", //boolean
+        "orderByField": "OrderByReleaseDateDESC", // OrderByTopSaleDESC, OrderByReleaseDateDESC, OrderByBestDiscountDESC, OrderByPriceDESC, OrderByPriceASC, OrderByNameASC, OrderByNameDESC or OrderByScoreDESC
+        "facetsBehavior": "Static", //dynamic  Static
+        "maxItemsPerPage": 20,
+        "skusFilter": "ALL", //FIRST_AVAILABLE  ALL_AVAILABLE All
+        "simulationBehavior": "skip" //default skip
       }
     }
   }
+}

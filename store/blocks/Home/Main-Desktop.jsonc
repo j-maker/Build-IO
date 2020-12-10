@@ -7,6 +7,19 @@
   },
   "responsive-layout.desktop#home": {
     "children": [
+      "flex-layout.row#mainHome"
+    ]
+  },
+  "flex-layout.row#mainHome": {
+    "children": [
+      "flex-layout.col#mainHome"
+    ]
+  },
+  "flex-layout.col#mainHome": {
+    "props": {
+      "blockClass": "wrapperMain"
+    },
+    "children": [
       "list-context.product-list#ShelfHome",
       "info-card",
       "list-context.image-list#home",
@@ -16,13 +29,10 @@
       "back-to-top-button",
       "iframe",
       "video"
-    ],
-    "props": {}
+    ]
   },
-
   "modal-trigger#RandomNumber": {
-    "children": [
-    ],
+    "children": [],
     "props": {
       "trigger": "load" //enum //click load load-session
     }

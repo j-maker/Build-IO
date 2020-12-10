@@ -17,7 +17,7 @@
             "login"
         ],
         "props": {
-            "blockClass": "", //String
+            "blockClass":"wrapperMain", //String
             "borderColor": "", //String
             "borderWidth": "", //0...5
             "border": "", //String \| String[] //top, right, bottom, left or all

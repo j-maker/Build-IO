@@ -1,0 +1,51 @@
+{
+  "search-result-layout#category": {
+    "blocks": [
+      "search-result-layout.desktop#category",
+      "search-result-layout.mobile#category",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#category": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "search-title.v2",
+      "order-by.v2",
+      "filter-navigator.v3",
+      "total-products.v2",
+      "flex-layout.row#subCategory",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "blockClass": "",
+      "showFacetQuantity": false,
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "mobileLayout": {
+        "mode1": "small", //normal, small or inline.
+        "mode2": "normal" //normal, small or inline.
+      },
+      "HiddenFacets": {
+        "brands": "", //boolean
+        "categories": "", //boolean
+        "priceRange": "", //boolean
+        "specificationFilters": {
+          "hideAll": "", //boolean
+          "hiddenFilters": {
+            "name": "" //string
+          }
+        }
+      }
+    }
+  },
+  "search-result-layout.mobile#category": {
+    "children": [],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small", //normal, small or inline.
+        "mode2": "normal" //normal, small or inline.
+      }
+    }
+  }
+}

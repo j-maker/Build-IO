@@ -7,6 +7,14 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "flex-layout.row#wrapperMainFooter"
+    ]
+  },
+  "flex-layout.row#wrapperMainFooter":{
+    "props":{
+      "blockClass":"wrapperMain"   
+    },
+    "children":[
       "link",
       "newsletter-form",
       "list-context.image-list#demo",
