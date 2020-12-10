@@ -44,6 +44,6 @@
             "visibleWhen": "True", //string
             "displayValue": "SPECIFICATION_NAME" //string
         }
-    },
+    }
 
 }
