@@ -1,0 +1,49 @@
+{
+    "breadcrumb#pdp": {
+        "props": {
+            "blockClass": "",
+            "showOnMobile": false, //boolean
+            "homeIconSize": 26, //number
+            "caretIconSize": 8 //number
+        }
+    },
+    "stack-layout#PDP": {
+        "props": {
+            "blockClass": "",
+            "zIndexOffset": 0 //number
+        },
+        "children": [
+            "flex-layout.row#product-image",
+            "product-specification-badges#PDP"
+        ]
+    },
+    "product-images#PDP": {
+        "props": {
+            "aspectRatio": "auto", //string - values: auto, 3:4, 1:1, 1920:1080
+            "contentOrder": "images-first", //string - values: images-first, videos-first
+            "displayThumbnailsArrows": false, //boolean
+            "placeholder": "", //string - image default when product not have images
+            "hiddenImages": "", //string - imageLabel hide 
+            "maxHeight": 600, //number 
+            "position": "left", //string - values: left, right
+            "showNavigationArrows": true, //boolean
+            "showPaginationDots": true, //boolean
+            "thumbnailAspectRatio": "auto", //string - values: auto, 3:4, 1:1, 1920:1080
+            "thumbnailMaxHeight": 150, //number 
+            "thumbnailsOrientation": "vertical", //string - values: vertical, horizontal
+            "zoomFactor": 2, //number 
+            "zoomMode": "in-place-click", //string - values: in-place-click, disabled, in-place-hover, open-modal
+            "ModalZoom": "in-place-click", //block - name of the block
+            "contentType": "all" //string - values: all, images, videos
+        }
+    },
+    "product-specification-badges#PDP": {
+        "props": {
+            "specificationGroupName": "Group", //string
+            "specificationName": "On Sale", //string
+            "visibleWhen": "True", //string
+            "displayValue": "SPECIFICATION_NAME" //string
+        }
+    },
+
+}

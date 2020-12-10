@@ -1,7 +1,91 @@
 {
   "store.product": {
     "children": [
-      
+      "responsive-layout.desktop#PDP",
+      "responsive-layout.mobile#PDP"
     ]
+  },
+  "responsive-layout.desktop#PDP": {
+    "children": [
+      "flex-layout.row#wrapperPDP"
+    ]
+  },
+  "flex-layout.row#wrapperPDP": {
+    "children": [
+      "flex-layout.col#wrapperPDP"
+    ],
+    "props": {
+      "blockClass": "wrapperHomeRow"
+    }
+  },
+  "flex-layout.col#wrapperPDP": {
+    "children": [
+      //"custom-default-message",
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "shelf.relatedProducts#pdp",
+      "back-to-top-button"
+    ],
+    "props": {
+      "blockClass": "wrapperMainPDP"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 0,
+      "blockClass": ""
+    },
+    "children": [
+      "breadcrumb#pdp"
+    ]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "wrapperMainProduct"
+    },
+    "children": [
+      "flex-layout.col#stack"
+      // "flex-layout.col#right-col"
+    ]
+  },
+  "flex-layout.col#stack": {
+    "children": [
+      "stack-layout#PDP"
+    ],
+    "props": {
+      "width": "", //string
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": [
+      "product-images#PDP"
+    ],
+    "props": {
+      "blockClass": "imagePDPMain"
+    }
   }
+  // "flex-layout.col#right-col": {
+  //   "props": {
+  //     "blockClass": "right-col",
+  //     "preventVerticalStretch": true,
+  //     "rowGap": 0
+  //   },
+  //   "children": [
+  //     "flex-layout.row#product-name-and-price",
+  //     "flex-layout.row#product-identifier.product",
+  //     "sku-selector#pdpColor",
+  //     "modal-trigger#pdpHelpSize",
+  //     "sku-selector#pdpTalla",
+  //     "flex-layout.row#add-button-and-wishlist",
+  //     "modal-trigger#envio-gratis",
+  //     "flex-layout.row#row-disponibility-and-details",
+  //   ]
+  // },
 }
