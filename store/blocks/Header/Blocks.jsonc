@@ -126,7 +126,7 @@
             "drawer-close-button"
         ],
         "props": {
-            "maxWidth": "", //number or string
+            "maxWidth": "1320px", //number or string
             "isFullWidth": "", //Boolean
             "slideDirection": "", //'horizontal'|'vertical'|'rightToLeft'|'leftToRight'
             "backdropMode": "" //'default'|'none'

@@ -22,7 +22,6 @@
 
   "modal-trigger#RandomNumber": {
     "children": [
-      "modal-layout#RandomNumber"
     ],
     "props": {
       "trigger": "load" //enum //click load load-session
@@ -42,7 +41,6 @@
   },
   "modal-header#RandomNumber": {
     "children": [
-      "custom-random-number"
       //"modal-actions.close"
     ],
     "props": {

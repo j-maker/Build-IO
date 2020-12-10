@@ -1,14 +1,5 @@
 {
     "custom-default-message": {
         "component": "DefaultMessage"
-    },
-    "custom-random-number": {
-        "component": "RandomNumber"
-    },
-    "availability-subscriber": {
-        "component": "AvailabilitySubscriber"
-    },
-    "share": {
-        "component": "Share"
-      }
+    }
 }
