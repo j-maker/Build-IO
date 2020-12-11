@@ -7,17 +7,17 @@
             "caretIconSize": 8 //number
         }
     },
-    "stack-layout#PDP": {
+    "stack-layout#pdp": {
         "props": {
             "blockClass": "",
             "zIndexOffset": 0 //number
         },
         "children": [
             "flex-layout.row#product-image",
-            "product-specification-badges#PDP"
+            "product-specification-badges#pdp"
         ]
     },
-    "product-images#PDP": {
+    "product-images#pdp": {
         "props": {
             "aspectRatio": "auto", //string - values: auto, 3:4, 1:1, 1920:1080
             "contentOrder": "images-first", //string - values: images-first, videos-first
@@ -33,17 +33,62 @@
             "thumbnailsOrientation": "vertical", //string - values: vertical, horizontal
             "zoomFactor": 2, //number 
             "zoomMode": "in-place-click", //string - values: in-place-click, disabled, in-place-hover, open-modal
-            "ModalZoom": "in-place-click", //block - name of the block
+            // "ModalZoom": "in-place-click", //block - name of the block
             "contentType": "all" //string - values: all, images, videos
         }
     },
-    "product-specification-badges#PDP": {
+    "product-specification-badges#pdp": {
         "props": {
             "specificationGroupName": "Group", //string
             "specificationName": "On Sale", //string
             "visibleWhen": "True", //string
             "displayValue": "SPECIFICATION_NAME" //string
         }
+    },
+    "sku-selector#all": {
+        "props": {
+            "visibleVariations": [
+                "color",
+                "talla"
+            ],
+            "blockClass": [
+                "selector"
+            ],
+            "variationsSpacing": 3,
+            "maxItems": 10,
+            "showValueForVariation ": true,
+            "marginTop": 10,
+            "hideImpossibleCombinations": true,
+            "showVariationsLabels": true,
+            "showVariationsErrorMessage": true,
+            "thumbnailImage": "sku-color", //Image in color
+            "showValueNameForImageVariation": true
+        }
+    },
+    "add-to-cart-button#btn-buy": {
+        "props": {
+            "blockClass": "btn-buy"
+        }
+    },
+    "add-to-list-btn#wishlist": {
+        "props": {
+            "blockClass": "btn-wishlist"
+        }
+    },
+    "accepted-payment-methods#pdp": {
+        "props": {
+            "showInColor": false,
+            "paymentMethods": [
+                "mastercard",
+                "visa",
+                "diners club"
+            ]
+        }
+    },
+    "rich-text#pdp-payments-text": {
+        "props": {
+            "blockClass": "pdp-payments-text",
+            "text": "Métodos de pago"
+        }
     }
-
 }

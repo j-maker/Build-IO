@@ -1,0 +1,15 @@
+{
+    "responsive-layout.mobile#pdp": {
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#product-name",
+            "stack-layout#pdp",
+            "flex-layout.row#product-identifier.product",
+            "flex-layout.row#price",
+            "sku-selector#all",
+            "modal-trigger#guideSize",
+            "flex-layout.row#add-button-and-wishlist",
+            "shelf.relatedProducts#pdp-suggestions"
+        ]
+    }
+}

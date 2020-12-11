@@ -1,0 +1,165 @@
+{
+    "modal-trigger#guideSize": {
+        "title": "PDP Guia de tallas",
+        "children": [
+            "rich-text#guideSize",
+            "modal-layout#guideSize"
+        ]
+    },
+    "rich-text#guideSize": {
+        "props": {
+            "text": "Guía de tallas",
+            "blockClass": "modalProductText"
+        }
+    },
+    "modal-layout#guideSize": {
+        "children": [
+            "modal-header#guideSize"
+        ],
+        "props": {
+            "blockClass": "WrapperModalGuideSizePDP"
+        }
+    },
+    "modal-header#guideSize": {
+        "children": [
+            "flex-layout.col#wrapperModalGuideSize"
+        ],
+        "props": {
+            "blockClass": "modalGuideSizePDP"
+        }
+    },
+    "flex-layout.col#wrapperModalGuideSize": {
+        "children": [
+            "rich-text#guideSizeTitle",
+            "rich-text#guideSizeContent",
+            "flex-layout.row#guide-size-PDP"
+        ]
+    },
+    "rich-text#guideSizeTitle": {
+        "title": "PDP-Guia-tallas-texto-titulo",
+        "props": {
+            "text": "Calzado",
+            "blockClass": "modalProductGuideSizeTitle"
+        }
+    },
+    "rich-text#guideSizeContent": {
+        "title": "PDP-Guia-tallas-texto-contenido",
+        "props": {
+            "text": "El tamaño puede variar según el estilo y el tipo de calzado. Las medias tallas no están disponibles en todos los estilos.",
+            "blockClass": "modalProductGuideSizeTextContent"
+        }
+    },
+    "flex-layout.row#guide-size-PDP": {
+        "title": "PDP Guia de tallas",
+        "children": [
+            "tab-layout#products-details-tabs-guide-size"
+        ]
+    },
+    "tab-layout#products-details-tabs-guide-size": {
+        "children": [
+            "flex-layout.row#products-details-guide-size",
+            "tab-content#products-details-guide-size"
+        ],
+        "props": {
+            "blockClass": "wrapperContentGuideSize",
+            "defaultActiveTabId": "guideSizePDP2"
+        }
+    },
+    "flex-layout.row#products-details-guide-size": {
+        "title": "PDP Guia de tallas",
+        "children": [
+            "tab-list#products-details-guide-size"
+        ],
+        "props": {
+            "blockClass": "containerMenuTabsGuideSize"
+        }
+    },
+    "tab-list#products-details-guide-size": {
+        "title": "PDP Guia de tallas",
+        "children": [
+            "tab-list.item#products-details-list1-guide-size",
+            "tab-list.item#products-details-list2-guide-size"
+        ],
+        "props": {
+            "width": "100%",
+            "blockClass": [
+                "wrapperTopTitleGuideSizes"
+            ]
+        }
+    },
+    "tab-list.item#products-details-list1-guide-size": {
+        "props": {
+            "tabId": "guideSizePDP1",
+            "label": "Tallas de Mujer",
+            "blockClass": "guideSizeButtonGeneral"
+        }
+    },
+    "tab-list.item#products-details-list2-guide-size": {
+        "props": {
+            "tabId": "guideSizePDP2",
+            "label": "Tallas de Hombre",
+            "blockClass": "guideSizeButtonGeneral"
+        }
+    },
+    "tab-content#products-details-guide-size": {
+        "children": [
+            "tab-content.item#products-details-content1-guide-size",
+            "tab-content.item#products-details-content2-guide-size"
+        ]
+    },
+    "tab-content.item#products-details-content1-guide-size": {
+        "children": [
+            "list-context.image-list#sizeGuidePDPWomen"
+        ],
+        "props": {
+            "tabId": "guideSizePDP1",
+            "blockClass": "wrapperImageGuideSizePDP"
+        }
+    },
+    "tab-content.item#products-details-content2-guide-size": {
+        "children": [
+            "list-context.image-list#sizeGuidePDPMen"
+        ],
+        "props": {
+            "tabId": "guideSizePDP2",
+            "blockClass": "wrapperImageGuideSizePDP"
+        }
+    },
+    "list-context.image-list#sizeGuidePDPWomen": {
+        "title": "Guia de tallas Mujer",
+        "children": [
+            "slider-layout#guideSize"
+        ],
+        "props": {
+            "blockClass": "PDPGuideSize",
+            "images": [
+                {
+                    "mobileImage": "https://aldoecuador.vteximg.com.br/arquivos/guia-de-tallas-mujer-aldo-mobile.png",
+                    "image": "https://aldoecuador.vteximg.com.br/arquivos/guia-de-tallas-mujer-aldo.png",
+                    "description": "Guia de tallas"
+                }
+            ]
+        }
+    },
+    "list-context.image-list#sizeGuidePDPMen": {
+        "title": "Guia de tallas Hombre",
+        "children": [
+            "slider-layout#guideSize"
+        ],
+        "props": {
+            "blockClass": "PDPGuideSize",
+            "images": [
+                {
+                    "mobileImage": "https://aldoecuador.vteximg.com.br/arquivos/guia-de-tallas-hombre-aldo-mobile.png",
+                    "image": "https://aldoecuador.vteximg.com.br/arquivos/guia-de-tallas-hombre-aldo.png",
+                    "description": "Guia de tallas"
+                }
+            ]
+        }
+    },
+    "slider-layout#guideSize": {
+        "props": {
+            "blockClass": "SizeGuideSlidepDP"
+        }
+    }
+}

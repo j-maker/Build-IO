@@ -52,23 +52,92 @@
             "product-price-savings#summary",
             "product-identifier.summary",
             "product-summary-buy-button",
-            "add-to-cart-button"   //AGREGA Bottom en vitrina
+            "add-to-cart-button" //AGREGA Bottom en vitrina
         ]
     },
     "product-images": {
         "props": {
-          "zoomFactor": 2,
-          "aspectRatio": {
-            "desktop": "1:1",
-            "phone": "1:1"
-          },
-          "thumbnailsOrientation": "horizontal",
-          "showNavigationArrows": "mobile",
-          "showPaginationDots": false,
-          "displayThumbnailsArrows": true,
-          "marginTop": 0,
-          // "hiddenImages": "1",
-          "paddingBottom": 7
+            "zoomFactor": 2,
+            "aspectRatio": {
+                "desktop": "1:1",
+                "phone": "1:1"
+            },
+            "thumbnailsOrientation": "horizontal",
+            "showNavigationArrows": "mobile",
+            "showPaginationDots": false,
+            "displayThumbnailsArrows": true,
+            "marginTop": 0,
+            // "hiddenImages": "1",
+            "paddingBottom": 7
         }
+    },
+    "shelf.relatedProducts#pdp-views": {
+        "props": {
+          "blockClass": "pdp-wrapper-shelf",
+          "recommendation": "view",
+          "productList": {
+            "showTitle": true,
+            "titleText": "Similars",
+            "maxItems": 20,
+            "scroll": "ONE_BY_ONE",
+            "arrows": true,
+            "minItemsPerPage": 4,
+            "itemsPerPage": {
+              "desktop": 4,
+              "tablet": 1,
+              "phone": 1
+            },
+            "showPaginationDots": "never"
+          }
+        },
+        "blocks": [
+          "product-summary.shelf"
+        ]
+      },
+    "shelf.relatedProducts#pdp-similars": {
+        "props": {
+          "blockClass": "pdp-wrapper-shelf",
+          "recommendation": "view",
+          "productList": {
+            "showTitle": true,
+            "titleText": "similars",
+            "maxItems": 20,
+            "scroll": "ONE_BY_ONE",
+            "arrows": true,
+            "minItemsPerPage": 4,
+            "itemsPerPage": {
+              "desktop": 4,
+              "tablet": 1,
+              "phone": 1
+            },
+            "showPaginationDots": "never"
+          }
+        },
+        "blocks": [
+          "product-summary.shelf"
+        ]
+      },
+    "shelf.relatedProducts#pdp-suggestions": {
+        "props": {
+          "blockClass": "pdp-wrapper-shelf",
+          "recommendation": "view",
+          "productList": {
+            "showTitle": true,
+            "titleText": "suggestions",
+            "maxItems": 20,
+            "scroll": "ONE_BY_ONE",
+            "arrows": true,
+            "minItemsPerPage": 4,
+            "itemsPerPage": {
+              "desktop": 4,
+              "tablet": 1,
+              "phone": 1
+            },
+            "showPaginationDots": "never"
+          }
+        },
+        "blocks": [
+          "product-summary.shelf"
+        ]
       }
 }
